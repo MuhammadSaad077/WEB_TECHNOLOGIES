@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Muhammad Saad Lodhi - CV</title>
-
+    <title>Muhammad Saad Lodhi — CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,120 +12,240 @@
 
     <div class="cv">
 
+        <!-- =====================================================
+             HEADER
+        ===================================================== -->
         <header>
-            <div>
-                <h1>Muhammad Saad Lodhi</h1>
-                <p>BSCS Student | Aspiring AI/ML Engineer</p>
+            <div class="header-bg-dots" aria-hidden="true"></div>
 
-                <p>
-                    <a href="https://www.linkedin.com/in/muhammad-saad-saeed-6aa393351">LinkedIn-SaadLodhi</a> |
-                    <a href="https://github.com/MuhammadSaad077">GitHub-MuhammadSaad077</a>
-                </p>
+            <div class="header-inner">
+                <div class="header-photo-wrap">
+                    <img src="Screenshot 2026-06-28 055729.png"
+                         alt="Muhammad Saad Lodhi"
+                         class="profile-photo">
+                </div>
+
+                <div class="header-text">
+                    <h1>Muhammad Saad Lodhi</h1>
+                    <p class="tagline">BSCS Student &nbsp;&middot;&nbsp; Aspiring AI&thinsp;/&thinsp;ML Engineer</p>
+
+                    <nav aria-label="Page sections">
+                        <a href="#about">About</a>
+                        <a href="#education">Education</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#certifications">Certifications</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
             </div>
         </header>
 
-        <section>
-            <h2>Profile</h2>
+        <!-- =====================================================
+             TWO-COLUMN BODY
+        ===================================================== -->
+        <div class="body-grid">
 
-            <p>
-                BSCS student with a strong interest in Artificial Intelligence,
-                Machine Learning, and Web Development. Interested in building
-                practical projects and developing strong foundations in
-                programming, problem solving, and software development.
-            </p>
-        </section>
+            <!-- ─── SIDEBAR ─── -->
+            <aside class="sidebar">
 
+                <!-- Skills -->
+                <section id="skills">
+                    <h2 class="sidebar-heading">
+                        <span class="section-icon" aria-hidden="true">⚡</span>
+                        Technical Skills
+                    </h2>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>HTML &amp; CSS</li>
+                        <li>OOP</li>
+                        <li>DS &amp; Algorithms</li>
+                        <li>Git &amp; GitHub</li>
+                        <li>Machine Learning</li>
+                        <li>Streamlit</li>
+                    </ul>
+                </section>
 
-        <section>
-            <h2>Education</h2>
+                <!-- Certifications -->
+                <section id="certifications">
+                    <h2 class="sidebar-heading">
+                        <span class="section-icon" aria-hidden="true">🏅</span>
+                        Certifications
+                    </h2>
+                    <ul class="cert-list">
+                        <li>
+                            <span class="cert-dot" aria-hidden="true"></span>
+                            <span>CS50x Puzzle Challenge 2025</span>
+                        </li>
+                        <li>
+                            <span class="cert-dot" aria-hidden="true"></span>
+                            <span>AI for Everyone &mdash; DeepLearning.AI</span>
+                        </li>
+                        <li>
+                            <span class="cert-dot" aria-hidden="true"></span>
+                            <span>Programming for Everybody &mdash; Univ. of Michigan</span>
+                        </li>
+                    </ul>
+                </section>
 
-            <h3>Bachelor of Science in Computer Science</h3>
+                <!-- Contact -->
+                <section id="contact">
+                    <h2 class="sidebar-heading">
+                        <span class="section-icon" aria-hidden="true">✉</span>
+                        Contact
+                    </h2>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">✉</span>
+                            <a href="mailto:muhammadsaadlodhi077@gmail.com">
+                                muhammadsaadlodhi077@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">in</span>
+                            <a href="https://www.linkedin.com/in/muhammad-saad-lodhi-6aa393351"
+                               target="_blank" rel="noopener noreferrer">
+                                LinkedIn Profile
+                            </a>
+                        </li>
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">&lt;/&gt;</span>
+                            <a href="https://github.com/MuhammadSaad077"
+                               target="_blank" rel="noopener noreferrer">
+                                GitHub Profile
+                            </a>
+                        </li>
+                    </ul>
+                </section>
 
-            <p>
-                COMSATS University Islamabad, Lahore Campus
-            </p>
+            </aside>
 
-            <p>
-                2024 - Present
-            </p>
-        </section>
+            <!-- ─── MAIN CONTENT ─── -->
+            <main>
 
+                <!-- About Me — moved here from sidebar -->
+                <section id="about" class="section-about">
+                    <h2>
+                        <span class="section-icon" aria-hidden="true">👤</span>
+                        About Me
+                    </h2>
+                    <p>
+                        I'm a Computer Science student at COMSATS University Islamabad (Lahore Campus),
+                        passionate about Artificial Intelligence, Machine Learning, and Web Development.
+                        I enjoy building practical projects that strengthen my programming foundations
+                        and problem-solving skills — from ML-powered web apps to desktop applications
+                        and interactive games.
+                    </p>
+                </section>
 
-        <section>
-            <h2>Technical Skills</h2>
+                <!-- Education -->
+                <section id="education">
+                    <h2>
+                        <span class="section-icon" aria-hidden="true">🎓</span>
+                        Education
+                    </h2>
 
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML & CSS</li>
-                <li>Object-Oriented Programming</li>
-                <li>Data Structures & Algorithms</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </section>
+                    <div class="edu-card">
+                        <div class="edu-year">2024&thinsp;&mdash;&thinsp;Present</div>
+                        <div class="edu-body">
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <p class="edu-inst">COMSATS University Islamabad, Lahore Campus</p>
+                            <p class="edu-detail">
+                                Core coursework in software engineering, algorithms, AI&thinsp;/&thinsp;ML,
+                                and object-oriented design. Active in coding challenges and open-source projects.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
+                <!-- Projects -->
+                <section id="projects">
+                    <h2>
+                        <span class="section-icon" aria-hidden="true">🚀</span>
+                        Projects
+                    </h2>
 
-        <section>
-            <h2>Projects</h2>
+                    <div class="projects-grid">
 
-            <h3>IPL Match Win Predictor</h3>
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>IPL Match Win Predictor</h3>
+                                <span class="project-badge badge-ml">ML</span>
+                            </div>
+                            <p>
+                                Predicts IPL match outcomes using historical data and advanced
+                                feature engineering. Deployed as an interactive web app.
+                            </p>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Scikit-learn</span>
+                                <span>XGBoost</span>
+                                <span>Streamlit</span>
+                                <span>FastAPI</span>
+                            </div>
+                        </article>
 
-            <p>
-                Machine learning project focused on predicting IPL match
-                outcomes using historical match data and feature engineering.
-            </p>
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>JavaFX Desktop Apps</h3>
+                                <span class="project-badge badge-desktop">Desktop</span>
+                            </div>
+                            <p>
+                                Suite of JavaFX applications — login systems, profile management
+                                dashboards, and data-driven interfaces with file handling.
+                            </p>
+                            <div class="tech-tags">
+                                <span>Java</span>
+                                <span>JavaFX</span>
+                                <span>OOP</span>
+                            </div>
+                        </article>
 
-            <p>
-                Technologies: Python, Pandas, NumPy, Scikit-learn,
-                XGBoost, Streamlit, FastAPI
-            </p>
+                        <article class="project-card">
+                            <div class="project-header">
+                                <h3>3D Car Racing Game</h3>
+                                <span class="project-badge badge-game">Game</span>
+                            </div>
+                            <p>
+                                A fully playable 3D car racing game built from scratch, featuring
+                                interactive gameplay elements and collision mechanics.
+                            </p>
+                            <div class="tech-tags">
+                                <span>Java</span>
+                                <span>OOP</span>
+                            </div>
+                        </article>
 
+                    </div>
+                </section>
 
-            <h3>JavaFX Application Projects</h3>
+                <!-- Career Interests -->
+                <section id="interests">
+                    <h2>
+                        <span class="section-icon" aria-hidden="true">🌐</span>
+                        Career Interests
+                    </h2>
+                    <p>
+                        Pursuing a career in Artificial Intelligence and Machine Learning while
+                        developing skills in software and web development. Keen to explore
+                        data science, computer vision, and natural language processing.
+                    </p>
+                </section>
 
-            <p>
-                Developed JavaFX applications involving login systems,
-                profile management, dashboards, file handling, and
-                data-driven user interfaces.
-            </p>
+            </main>
 
-            <p>
-                Technologies: Java, JavaFX, OOP
-            </p>
+        </div><!-- /.body-grid -->
 
+        <!-- =====================================================
+             FOOTER
+        ===================================================== -->
+        <footer>
+            <p>&copy; 2025 Muhammad Saad Lodhi &mdash; All rights reserved.</p>
+        </footer>
 
-            <h3>3D Car Racing Game</h3>
-
-            <p>
-                Developed a 3D car racing game as a programming project,
-                implementing gameplay functionality and interactive elements.
-            </p>
-        </section>
-
-        <section>
-            <h2>Certifications</h2>
-
-            <ul>
-                <li>CS50x Puzzle Challenge 2025</li>
-                <li>AI for Everyone - DeepLearning.AI</li>
-                <li>Programming for Everybody - University of Michigan</li>
-            </ul>
-        </section>
-
-
-        <section>
-            <h2>Career Interests</h2>
-
-            <p>
-                Interested in pursuing a career in Artificial Intelligence
-                and Machine Learning while continuing to develop skills in
-                software and web development.Also interested in exploring 
-                opportunities in data science, computer vision, and natural
-                 language processing.
-            </p>
-        </section>
-
-    </div>
+    </div><!-- /.cv -->
 
 </body>
 </html>
