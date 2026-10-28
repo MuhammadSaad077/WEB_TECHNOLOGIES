@@ -1,7 +1,4 @@
-/* ============================================================
-   GOOGLE FONT
-   Inter — clean, modern, excellent readability
-============================================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* ============================================================
@@ -844,3 +841,5 @@ footer p {
         padding: 16px var(--sp-md);
     }
 }
+
+
