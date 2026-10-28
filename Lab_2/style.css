@@ -1,0 +1,106 @@
+.hero {
+    background-image: url("image-4.jpg");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(90, 116, 10); 
+    background-color: rgb(90, 116, 10);
+    padding: 30px;
+    border: 2px solid rgb(57, 196, 62);
+    border-radius: 100px;
+    text-align: center;
+    margin : 20px 0;
+
+}
+
+.hero:hover {
+    background-color: rgb(47, 166, 11);
+}
+
+
+@keyframes fadeIn {
+   from {opacity: 0;};
+   to   {opacity : 1;};
+}
+.tit-ani{
+    animation:  2s fadeIn ease-in-out 2;
+    color :rgb(202, 230, 24)
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.Box-A,
+.Box-B {
+    width: 45%;
+    height: 200px;
+    border: 2px solid black;
+    transition: transform 0.5s ease-in-out; 
+    border-radius: 100px;
+
+}
+
+.Box-A img,
+.Box-B img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+    border-radius: 100px;
+}
+
+.Box-A:hover,
+.Box-B:hover {
+    transform: rotate(360deg);
+}
+
+
+.card-row {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgb(20, 176, 6);
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.mini-card {
+    flex: 1;
+    background-color: lightblue;
+    padding: 30px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+/* Navbar link colors */
+.navbar-nav .nav-link {
+    color: rgb(118, 221, 29);
+}
+
+.nav-item .nav-link:hover {
+    color: rgb(13, 213, 224);
+}
+
+.product-img {
+    height: 150px;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767.98ppx) {
+    .card-row {
+        flex-direction: column;
+    }
+}
+
+.img-manager {
+    width: 100%;          
+    height: 150px;
+    object-fit: cover;    
+}
+
+
