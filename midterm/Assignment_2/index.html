@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrickShop – Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-3 px-lg-4">
+        <a class="navbar-brand me-3" href="index.html">BRICK<br>SHOP</a>
+
+        <button class="navbar-toggler order-lg-3 ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-flex align-items-center gap-3 order-lg-3">
+          <a href="#" class="header-icon d-none d-md-flex"><i class="bi bi-person-circle"></i><span class="small ms-1">Sign Up</span></a>
+          <a href="#" class="header-icon" aria-label="Wishlist"><i class="bi bi-heart"></i></a>
+          <a href="#" class="header-icon" aria-label="Shopping bag"><i class="bi bi-bag"></i><span class="small ms-1">(0)</span></a>
+        </div>
+
+        <div class="collapse navbar-collapse order-lg-2" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">All sets</a></li>
+                <li><a class="dropdown-item" href="#">Themes</a></li>
+                <li><a class="dropdown-item" href="#">Gifts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Discover</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ideas</a></li>
+                <li><a class="dropdown-item" href="#">Events</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Help</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                <li><a class="dropdown-item" href="#">Delivery</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-lg-2 my-2 my-lg-0"><a class="new-pill" href="#">New</a></li>
+          </ul>
+          <form class="search-form ms-lg-auto me-lg-4" role="search" action="#">
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro-banner text-center text-white">
+      <div class="container">
+        <h1 class="h3 fw-bold">Get more at The Brick Store</h1>
+        <p class="mx-auto mb-0">The Brick Store is more than a place to shop. It's a destination where every visit is filled with more colour, play, surprises and the excitement of discovering more unforgettable experiences.</p>
+      </div>
+    </section>
+
+    <section class="hero-yellow">
+      <div class="container text-center">
+        <div class="hero-art mx-auto">
+          <span class="float-item fi-1"></span><span class="float-item fi-2"></span>
+          <span class="float-item fi-3"></span><span class="float-item fi-4"></span>
+          <div class="hero-bag"><div class="bag-logo">BRICK<br>SHOP</div></div>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-4 g-2 g-md-3 justify-content-center category-tiles">
+          <div class="col"><a href="#products" class="tile"><span>All sets</span><img src="images/sets.png" alt="All sets"></a></div>
+          <div class="col"><a href="#products" class="tile"><span>Halloween</span><img src="images/halloween.png" alt="Halloween"></a></div>
+          <div class="col"><a href="#products" class="tile"><span>Sale</span><img src="images/sale.png" alt="Sale"></a></div>
+          <div class="col"><a href="#products" class="tile"><span>2x points</span><img src="images/points.png" alt="2x points"></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5" id="products">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold fs-3 mb-0">Popular sets</h2>
+        <span class="text-muted small">8 products</span>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card product-card h-100">
+            <a href="product.html" class="card-img-wrap"><img src="images/ET1.jpg" alt="Eiffel Tower"></a>
+            <div class="card-body d-flex flex-column">
+              <small class="text-muted">LEGO Icons</small>
+              <h5 class="card-title fs-6 mt-1"><a href="product.html">Eiffel Tower</a></h5>
+              <p class="price mt-auto mb-2">€629.99</p>
+              <button type="button" class="btn btn-lego w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <a href="product.html" class="card-img-wrap"><img src="images/mellenium.jpg" alt="Millennium Falcon"></a>
+            <div class="card-body d-flex flex-column">
+              <small class="text-muted">LEGO Star Wars</small>
+              <h5 class="card-title fs-6 mt-1"><a href="product.html">Millennium Falcon</a></h5>
+              <p class="price mt-auto mb-2">€169.99</p>
+              <button type="button" class="btn btn-lego w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <a href="product.html" class="card-img-wrap"><img src="images/orchid.jpg" alt="Orchid"></a>
+            <div class="card-body d-flex flex-column">
+              <small class="text-muted">LEGO Botanicals</small>
+              <h5 class="card-title fs-6 mt-1"><a href="product.html">Orchid</a></h5>
+              <p class="price mt-auto mb-2">€49.99</p>
+              <button type="button" class="btn btn-lego w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <a href="product.html" class="card-img-wrap"><img src="images/lambo.jpg" alt="Lamborghini Sián"></a>
+            <div class="card-body d-flex flex-column">
+              <small class="text-muted">LEGO Technic</small>
+              <h5 class="card-title fs-6 mt-1"><a href="product.html">Lamborghini Sián</a></h5>
+              <p class="price mt-auto mb-2">€449.99</p>
+              <button type="button" class="btn btn-lego w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <a href="product.html" class="card-img-wrap"><img src="images/castle.jpg" alt="Hogwarts Castle"></a>
+            <div class="card-body d-flex flex-column">
+              <small class="text-muted">LEGO Harry Potter</small>
+              <h5 class="card-title fs-6 mt-1"><a href="product.html">Hogwarts Castle</a></h5>
+              <p class="price mt-auto mb-2">€149.99</p>
+              <button type="button" class="btn btn-lego w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <a href="product.html" class="card-img-wrap"><img src="images/skyline.jpg" alt="Tokyo Skyline"></a>
+            <div class="card-body d-flex flex-column">
+              <small class="text-muted">LEGO Architecture</small>
+              <h5 class="card-title fs-6 mt-1"><a href="product.html">Tokyo Skyline</a></h5>
+              <p class="price mt-auto mb-2">€59.99</p>
+              <button type="button" class="btn btn-lego w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <a href="product.html" class="card-img-wrap"><img src="images/bugati.jpg" alt="Bugatti Chiron"></a>
+            <div class="card-body d-flex flex-column">
+              <small class="text-muted">LEGO Speed Champions</small>
+              <h5 class="card-title fs-6 mt-1"><a href="product.html">Bugatti Chiron</a></h5>
+              <p class="price mt-auto mb-2">€24.99</p>
+              <button type="button" class="btn btn-lego w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <a href="product.html" class="card-img-wrap"><img src="images/brick_box.jpg" alt="Classic Brick Box"></a>
+            <div class="card-body d-flex flex-column">
+              <small class="text-muted">LEGO Classic</small>
+              <h5 class="card-title fs-6 mt-1"><a href="product.html">Classic Brick Box</a></h5>
+              <p class="price mt-auto mb-2">€34.99</p>
+              <button type="button" class="btn btn-lego w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6>BRICKSHOP</h6>
+          <p class="small">A student project modeled on lego.com/en-nl. Not affiliated with the LEGO Group.</p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <h6>Shop</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#">New arrivals</a></li><li><a href="#">Best sellers</a></li><li><a href="#">Deals</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <h6>Help</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#">Contact us</a></li><li><a href="#">Delivery</a></li><li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6>Follow us</h6>
+          <a href="#" class="fs-4 me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="fs-4 me-3" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">© 2026 BrickShop · Privacy · Terms</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

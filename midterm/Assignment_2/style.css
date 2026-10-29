@@ -1,0 +1,102 @@
+/* ===== Custom styles (Bootstrap does grid + navbar; this adds the LEGO look) ===== */
+:root {
+  --lego-yellow: #ffcf00;
+  --lego-red: #d01012;
+  --lego-black: #1a1a1a;
+  --lego-grey: #f4f4f4;
+}
+
+body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--lego-black); }
+
+.site-header { background: var(--lego-yellow); }
+.site-header .navbar { padding: .6rem 0; }
+.site-header .navbar-brand {
+  background: var(--lego-red); color: #fff; font-weight: 900; font-size: .75rem; line-height: 1.05;
+  letter-spacing: 1px; text-align: center; padding: .4rem .55rem; border: 2px solid #fff;
+  outline: 2px solid var(--lego-black); border-radius: 3px;
+}
+.site-header .nav-link { color: var(--lego-black); font-weight: 700; font-size: .9rem; padding: .5rem 1rem; }
+.new-pill { display: inline-block; background: #fff; color: var(--lego-red); font-weight: 700; font-size: .9rem; padding: .4rem 1rem; border-radius: 50px; text-decoration: none; }
+.search-form { min-width: 260px; }
+.search-form .input-group-text, .search-form .form-control { background: #fff; border: 1px solid #ccc; }
+.search-form .input-group-text { border-radius: 50px 0 0 50px; border-right: 0; }
+.search-form .form-control { border-radius: 0 50px 50px 0; border-left: 0; }
+.header-icon { color: var(--lego-black); text-decoration: none; font-size: 1.3rem; display: flex; align-items: center; }
+
+.intro-banner { background: #4a37a0; padding: 2.2rem 0; }
+.intro-banner p { max-width: 640px; font-size: .85rem; }
+.hero-yellow { background: linear-gradient(#ffd800 0%, #ffe45c 70%, #ffec80 100%); padding: 2rem 0 3rem; overflow: hidden; }
+.hero-art { position: relative; width: 100%; max-width: 700px; height: 320px; }
+.hero-bag {
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  width: 190px; height: 230px; background: #ffe600; box-shadow: 6px 6px 12px rgba(0,0,0,.15);
+  display: flex; align-items: center; justify-content: center;
+}
+.bag-logo { background: var(--lego-red); color: #fff; font-weight: 900; font-size: 1.1rem; line-height: 1.1;
+  padding: 1.1rem 1rem; border: 4px solid #fff; outline: 3px solid var(--lego-black); }
+.float-item { position: absolute; border-radius: 50%; }
+.fi-1 { width: 70px; height: 70px; background: #7d3cff; left: 12%; top: 40%; }
+.fi-2 { width: 60px; height: 60px; background: #e8341c; left: 22%; top: 8%; }
+.fi-3 { width: 80px; height: 80px; background: #f58a00; right: 14%; top: 12%; }
+.fi-4 { width: 65px; height: 65px; background: #ff4fa3; right: 8%; top: 52%; }
+
+.category-tiles { margin-top: 1.5rem; max-width: 620px; margin-left: auto; margin-right: auto; }
+.tile { display: block; background: #fff; border: 2px solid #fff; text-decoration: none; color: var(--lego-black);
+  font-weight: 700; font-size: .9rem; padding: .7rem .5rem 0; height: 100%; transition: transform .2s; }
+.tile:hover { transform: translateY(-4px); }
+.tile span { display: block; margin-bottom: .5rem; }
+.tile img { width: 100%; display: block; }
+
+/* ===== Product cards ===== */
+.product-card { border: 1px solid #e3e3e3; border-radius: 12px; transition: transform .2s, box-shadow .2s; overflow: hidden; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,.12); }
+/* Fixed square image box so every card is the same height */
+.card-img-wrap { display: block; aspect-ratio: 1 / 1; overflow: hidden; background: var(--lego-grey); }
+.card-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+.product-card .card-title a { color: var(--lego-black); text-decoration: none; }
+.price { font-weight: 800; font-size: 1.15rem; }
+
+/* Keep section headings clear of the sticky header when jumping to #products */
+#products { scroll-margin-top: 80px; }
+
+/* ===== Buttons ===== */
+.btn-lego { background: var(--lego-yellow); color: var(--lego-black); font-weight: 700; border: 2px solid var(--lego-black); }
+.btn-lego:hover { background: var(--lego-black); color: var(--lego-yellow); }
+
+/* ===== Product detail ===== */
+.product-main-img { width: 100%; border-radius: 12px; background: var(--lego-grey); }
+.product-title { font-weight: 800; }
+.qty-input { max-width: 110px; text-align: center; }
+
+/* ===== Footer ===== */
+.site-footer { background: var(--lego-black); color: #ccc; margin-top: 4rem; padding: 3rem 0 1rem; }
+.site-footer h6 { color: #fff; font-weight: 700; }
+.site-footer a { color: #ccc; text-decoration: none; }
+.site-footer a:hover { color: var(--lego-yellow); text-decoration: underline; }
+.footer-bottom { border-top: 1px solid #444; margin-top: 2rem; padding-top: 1rem; font-size: .85rem; }
+
+/* ===== Media queries (custom responsive tweaks on top of Bootstrap) ===== */
+/* Phone */
+@media (max-width: 575.98px) {
+  .hero-art { height: 240px; }
+  .hero-bag { width: 140px; height: 170px; }
+  .bag-logo { font-size: .85rem; padding: .7rem .6rem; }
+  .float-item { transform: scale(.7); }
+  .price { font-size: 1rem; }
+}
+/* Mobile + tablet: navbar is collapsed */
+@media (max-width: 991.98px) {
+  .search-form { margin: .5rem 0 1rem; min-width: 0; }
+}
+/* Tablet and up */
+@media (min-width: 768px) {
+  .intro-banner h1 { font-size: 1.75rem; }
+  .intro-banner p { font-size: 1rem; }
+  .hero-art { height: 380px; }
+}
+/* Desktop */
+@media (min-width: 992px) {
+  .hero-art { height: 420px; }
+  .hero-bag { width: 230px; height: 280px; }
+  .category-tiles { max-width: 620px; }
+}
