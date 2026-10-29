@@ -1,0 +1,228 @@
+/* ===== Custom styles (Bootstrap does grid + navbar; this adds the LEGO look) ===== */
+:root {
+  --lego-yellow: #ffcf00;
+  --lego-red: #d01012;
+  --lego-black: #1a1a1a;
+  --lego-grey: #f4f4f4;
+}
+
+body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--lego-black); }
+
+/* ===== Header (LEGO-style) ===== */
+.site-header { background: var(--lego-yellow); }
+.site-header .navbar { padding: .6rem 0; }
+.site-header .navbar-brand {
+  background: var(--lego-red); color: #fff; font-weight: 900; font-size: .75rem; line-height: 1.05;
+  letter-spacing: 1px; text-align: center; padding: .4rem .55rem; border: 2px solid #fff;
+  outline: 2px solid var(--lego-black); border-radius: 3px;
+}
+.site-header .nav-link { color: var(--lego-black); font-weight: 700; font-size: .9rem; padding: .5rem 1rem; }
+.new-pill { display: inline-block; background: #fff; color: var(--lego-red); font-weight: 700; font-size: .9rem; padding: .4rem 1rem; border-radius: 50px; text-decoration: none; }
+.search-form { min-width: 260px; }
+.search-form .input-group-text, .search-form .form-control { background: #fff; border: 1px solid #ccc; }
+.search-form .input-group-text { border-radius: 50px 0 0 50px; border-right: 0; }
+.search-form .form-control { border-radius: 0 50px 50px 0; border-left: 0; }
+.header-icon { color: var(--lego-black); text-decoration: none; font-size: 1.3rem; display: flex; align-items: center; }
+
+/* ===== Intro banner + hero ===== */
+.intro-banner { background: #4a37a0; padding: 2.2rem 0; }
+.intro-banner p { max-width: 640px; font-size: .85rem; }
+.hero-yellow { background: linear-gradient(#ffd800 0%, #ffe45c 70%, #ffec80 100%); padding: 2rem 0 3rem; overflow: hidden; }
+.hero-art { position: relative; width: 100%; max-width: 700px; height: 320px; }
+.hero-bag {
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  width: 190px; height: 230px; background: #ffe600; box-shadow: 6px 6px 12px rgba(0,0,0,.15);
+  display: flex; align-items: center; justify-content: center;
+}
+.bag-logo { background: var(--lego-red); color: #fff; font-weight: 900; font-size: 1.1rem; line-height: 1.1;
+  padding: 1.1rem 1rem; border: 4px solid #fff; outline: 3px solid var(--lego-black); }
+.float-item { position: absolute; border-radius: 50%; }
+.fi-1 { width: 70px; height: 70px; background: #7d3cff; left: 12%; top: 40%; }
+.fi-2 { width: 60px; height: 60px; background: #e8341c; left: 22%; top: 8%; }
+.fi-3 { width: 80px; height: 80px; background: #f58a00; right: 14%; top: 12%; }
+.fi-4 { width: 65px; height: 65px; background: #ff4fa3; right: 8%; top: 52%; }
+
+.category-tiles { margin-top: 1.5rem; max-width: 620px; margin-left: auto; margin-right: auto; }
+.tile { display: block; background: #fff; border: 2px solid #fff; text-decoration: none; color: var(--lego-black);
+  font-weight: 700; font-size: .9rem; padding: .7rem .5rem 0; height: 100%; transition: transform .2s; }
+.tile:hover { transform: translateY(-4px); }
+.tile span { display: block; margin-bottom: .5rem; }
+.tile img { width: 100%; display: block; }
+
+/* ===== Product cards ===== */
+.product-card { border: 1px solid #e3e3e3; border-radius: 12px; transition: transform .2s, box-shadow .2s; overflow: hidden; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,.12); }
+/* Fixed square image box so every card is the same height */
+.card-img-wrap { display: block; aspect-ratio: 1 / 1; overflow: hidden; background: var(--lego-grey); }
+.card-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+.product-card .card-title a { color: var(--lego-black); text-decoration: none; }
+.price { font-weight: 800; font-size: 1.15rem; }
+
+/* Keep section headings clear of the sticky header when jumping to #products */
+#products { scroll-margin-top: 80px; }
+
+/* ===== Buttons ===== */
+.btn-lego { background: var(--lego-yellow); color: var(--lego-black); font-weight: 700; border: 2px solid var(--lego-black); }
+.btn-lego:hover { background: var(--lego-black); color: var(--lego-yellow); }
+
+/* ===== Product detail ===== */
+.product-main-img { width: 100%; border-radius: 12px; background: var(--lego-grey); }
+.product-title { font-weight: 800; }
+.qty-input { max-width: 110px; text-align: center; }
+
+/* ===== Footer ===== */
+.site-footer { background: var(--lego-black); color: #ccc; margin-top: 4rem; padding: 3rem 0 1rem; }
+.site-footer h6 { color: #fff; font-weight: 700; }
+.site-footer a { color: #ccc; text-decoration: none; }
+.site-footer a:hover { color: var(--lego-yellow); text-decoration: underline; }
+.footer-bottom { border-top: 1px solid #444; margin-top: 2rem; padding-top: 1rem; font-size: .85rem; }
+
+/* ===== Media queries (custom responsive tweaks on top of Bootstrap) ===== */
+/* Phone */
+@media (max-width: 575.98px) {
+  .hero-art { height: 240px; }
+  .hero-bag { width: 140px; height: 170px; }
+  .bag-logo { font-size: .85rem; padding: .7rem .6rem; }
+  .float-item { transform: scale(.7); }
+  .price { font-size: 1rem; }
+}
+/* Mobile + tablet: navbar is collapsed */
+@media (max-width: 991.98px) {
+  .search-form { margin: .5rem 0 1rem; min-width: 0; }
+}
+/* Tablet and up */
+@media (min-width: 768px) {
+  .intro-banner h1 { font-size: 1.75rem; }
+  .intro-banner p { font-size: 1rem; }
+  .hero-art { height: 380px; }
+}
+/* Desktop */
+@media (min-width: 992px) {
+  .hero-art { height: 420px; }
+  .hero-bag { width: 230px; height: 280px; }
+  .category-tiles { max-width: 620px; }
+}
+
+/* =====================================================================
+   TASK 1 - MEGA MENU   (example numbers: N=76 -> BP=676px, H=172, K=4)
+   Change these 3 things if your N is different:
+     1) --accent hue      (H)
+     2) @media min-width  (BP)
+     3) repeat(4, 1fr)    (K)  + the number of .mega-col / <details> in HTML
+   ===================================================================== */
+:root { --accent: hsl(172, 70%, 45%); }   /* hsl(H, 70%, 45%) */
+
+/* ---------- DEFAULT = BELOW BP (mobile first) ---------- */
+.mega-panel { display: none; }                 /* desktop panel hidden */
+.mega-trigger { pointer-events: none; }        /* just a label in hamburger menu */
+
+.mega-accordion details { border-bottom: 1px solid rgba(0,0,0,.15); }
+.mega-accordion summary {
+  cursor: pointer; font-weight: 600; padding: .6rem 1rem;
+}
+.mega-accordion summary:hover,
+.mega-accordion summary:focus-visible { color: var(--accent); }
+.mega-accordion ul { list-style: none; margin: 0; padding: 0 1rem .6rem 2rem; }
+.mega-accordion a { display: block; padding: .25rem 0; color: var(--lego-black); text-decoration: none; }
+.mega-accordion a:hover, .mega-accordion a:focus-visible { color: var(--accent); text-decoration: underline; }
+
+/* ---------- FROM BP AND WIDER ---------- */
+@media (min-width: 676px) {
+
+  /* 1) Make the navbar expand at BP instead of Bootstrap's 992px */
+  .site-header .navbar-toggler { display: none; }
+  .site-header .navbar-collapse { display: flex !important; flex-basis: auto; order: 2; }
+  .site-header .navbar-nav { flex-direction: row; }
+  .site-header .navbar-nav .dropdown-menu { position: absolute; }
+  .site-header .header-actions { order: 3; }
+  .site-header .nav-link { padding: .5rem .7rem; }
+  .site-header .search-form { margin: 0 1rem 0 auto; min-width: 160px; }
+
+  /* 2) Hide the accordion, show the mega panel logic */
+  .mega-accordion { display: none; }
+  .mega-trigger { pointer-events: auto; }
+
+  /* The panel is positioned against .navbar (position: relative in Bootstrap),
+     so it is full width, sits right under the navbar and takes NO space in the layout */
+  .mega-panel {
+    display: block;
+    position: absolute; top: 100%; left: 0; right: 0;
+    z-index: 1030;
+    background: #fff;
+    border-top: 4px solid var(--accent);
+    box-shadow: 0 12px 24px rgba(0,0,0,.18);
+    padding: 1.5rem 0;
+
+    visibility: hidden; opacity: 0;
+    transition: opacity .15s, visibility .15s;
+  }
+
+  /* Invisible bridge: fills the small gap between the menu item and the panel
+     so the panel does not close while the mouse travels down */
+  .mega-panel::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -1.5rem; height: 1.5rem;
+  }
+
+  /* OPEN on hover OR when ANY child has keyboard focus (Tab) */
+  .mega-item:hover .mega-panel,
+  .mega-item:focus-within .mega-panel {
+    visibility: visible; opacity: 1;
+  }
+  .mega-item:hover > .mega-trigger,
+  .mega-item:focus-within > .mega-trigger { background: rgba(255,255,255,.6); border-radius: 6px; }
+
+  /* K columns */
+  .mega-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+
+  .mega-heading {
+    font-size: .95rem; font-weight: 800; text-transform: uppercase;
+    color: var(--accent); border-bottom: 2px solid var(--accent);
+    padding-bottom: .4rem; margin-bottom: .6rem;
+  }
+  .mega-col ul { list-style: none; margin: 0; padding: 0; }
+  .mega-col a { display: block; padding: .25rem 0; color: var(--lego-black); text-decoration: none; font-size: .95rem; }
+  .mega-col a:hover, .mega-col a:focus-visible { color: var(--accent); text-decoration: underline; }
+}
+
+/* =====================================================================
+   TASK 2 - CHECKOUT FORM   (example numbers: N=76 -> BP=676px, H=172)
+   ===================================================================== */
+
+/* ---------- DEFAULT = BELOW BP: one column, labels above inputs ---------- */
+.checkout-form { display: grid; grid-template-columns: 1fr; gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+
+.checkout-fieldset {
+  min-width: 0;                              /* fieldsets default to min-width:min-content, this stops overflow */
+  border: 2px solid var(--lego-black);
+  border-radius: 12px;
+  padding: 1rem 1.25rem .25rem;
+  background: #fff;
+}
+.checkout-fieldset legend { font-size: 1.15rem; font-weight: 800; color: var(--accent); }
+
+.field { display: grid; grid-template-columns: minmax(0, 1fr); gap: .25rem; margin-bottom: 1rem; }
+.field .form-label { margin: 0; font-weight: 700; }
+
+/* error message hidden until the field is touched AND invalid */
+.error-msg { display: none; color: #c00; font-size: .85rem; }
+
+/* red border only AFTER interaction (:user-invalid), never on page load */
+.form-control:user-invalid,
+.form-select:user-invalid { border-color: #c00; box-shadow: 0 0 0 .15rem rgba(204,0,0,.2); }
+.form-control:user-invalid + .error-msg,
+.form-select:user-invalid + .error-msg { display: block; }
+
+/* nice feedback when valid (accent colour) */
+.form-control:user-valid,
+.form-select:user-valid { border-color: var(--accent); }
+
+.submit-row { margin-bottom: 1rem; }
+
+/* ---------- FROM BP AND WIDER: fieldsets side by side, labels in a left column ---------- */
+@media (min-width: 676px) {
+  .checkout-form { grid-template-columns: 1fr 1fr; align-items: start; }
+  .submit-row { grid-column: 1 / -1; }       /* button spans both columns */
+
+  .field { grid-template-columns: 6.5rem minmax(0, 1fr); column-gap: 1rem; align-items: center; }
+  .field .error-msg { grid-column: 2; }      /* message sits under the input */
+}
